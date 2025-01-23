@@ -1,0 +1,16 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Kabeba",
+        "email": "john.kabeba@firstbank.com",
+        "favoriteColor": "Blue",
+        "birthday": "1990-01-01"
+    },
+    {
+        "firstName": "Jane",
+        "lastName": "Gakwavu",
+        "email": "jane.gakwavu@garage24.com",
+        "favoriteColor": "Red",
+        "birthday": "1985-05-15"
+    }
+]
