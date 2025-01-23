@@ -12,15 +12,15 @@ connectDB();
 // Middleware
 app.use(express.json());
 
-// Root Route (to handle GET /)
+// Routes
+app.use('/api/contacts', contactRoutes);
+
+// Root Route
 app.get('/', (req, res) => {
     res.send('Welcome to the Contacts API!');
 });
 
-// API Routes
-app.use('/api/contacts', contactRoutes);
-
-// Start the server
+// Start Server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
