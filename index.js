@@ -11,6 +11,13 @@ connectDB();
 
 // Middleware
 app.use(express.json());
+
+// Root Route (to handle GET /)
+app.get('/', (req, res) => {
+    res.send('Welcome to the Contacts API!');
+});
+
+// API Routes
 app.use('/api/contacts', contactRoutes);
 
 // Start the server
