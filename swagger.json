@@ -94,12 +94,24 @@
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
-          }
+            "type": "string",
+            "description": "ID of the contact to update"
+          },
+        {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+                "$ref": "#/definitions/Contact"
+            }
+        }          
         ],
         "responses": {
           "200": {
-            "description": "OK"
+              "description": "Contact updated successfully",
+              "schema": {
+                  "$ref": "#/definitions/Contact"
+              }
           },
           "404": {
             "description": "Not Found"
