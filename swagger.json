@@ -8,7 +8,7 @@
   "host": "contacts-api-k12u.onrender.com/",
   "basePath": "/api/contacts",
   "schemes": [
-    "https",
+    "https"
   ],
   "paths": {
     "/": {
